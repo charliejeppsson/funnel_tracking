@@ -1,2 +1,18 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
+<!-- Tracking pixel meant to make an http request each time a user visits the
+    page and store a cookie with user/cookie id, timestamp and url, so that for
+    instance we can count the page visits -->
+<img src=“#” class="tracking-pixel"/>
+
+<div>
+  <p> <%= request.env['PATH_INFO'] %> </p>
+  <br>
+  <%#= cookies[:value].nil? %>
+  <%#= cookies[:value].split(',')[-1] %>
+
+  <% cookies.each do |cookie| %>
+    <p> <%= cookie %> </p>
+  <% end %>
+</div>

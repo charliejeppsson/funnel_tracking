@@ -6,8 +6,14 @@
     instance we can count the page visits -->
 <img src=“#” class="tracking-pixel"/>
 
-<table>
- <tr><td>Timestamp:</td><td><%= @timestamp %></td></tr>
- <tr><td>User ID:</td><td><%= @user_id %></td></tr>
- <tr><td>Url:</td><td><%= @url %></td></tr>
-</table>
+<div>
+  <p> <%= request.env['PATH_INFO'] %> </p>
+  <br>
+  <%#= cookies[:value].nil? %>
+  <%#= cookies[:value].split(',')[-1] %>
+
+  <% cookies.each do |cookie| %>
+    <p> <%= cookie %> </p>
+  <% end %>
+</div>
+
