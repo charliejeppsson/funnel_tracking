@@ -1,2 +1,13 @@
 <h1>Pages#contact</h1>
 <p>Find me in app/views/pages/contact.html.erb</p>
+
+<!-- Tracking pixel meant to make an http request each time a user visits the
+    page and store a cookie with user/cookie id, timestamp and url, so that for
+    instance we can count the page visits -->
+<img src=“#” class="tracking-pixel"/>
+
+<table>
+ <tr><td>Timestamp:</td><td><%= @timestamp %></td></tr>
+ <tr><td>User ID:</td><td><%= @user_id %></td></tr>
+ <tr><td>Url:</td><td><%= @url %></td></tr>
+</table>
