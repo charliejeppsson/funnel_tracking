@@ -41,9 +41,7 @@
   displayed by running:
   <pre><code>Visit.where(timestamp: ('2017-09-14 09:00:00 +0200').to_datetime..('2017-09-14 11:00:00 +0200').to_datetime)</code></pre>
 
-  The whole list of query options can be found here:
-  <a href="http://guides.rubyonrails.org/v3.2/active_record_querying.html">
-  http://guides.rubyonrails.org/v3.2/active_record_querying.html</a>.
+  The whole list of query options can be found <a href="http://guides.rubyonrails.org/v3.2/active_record_querying.html">here</a>.
 </p>
 
 <h2>How to build and run</h2>
