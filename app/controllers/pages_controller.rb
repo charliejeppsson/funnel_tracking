@@ -13,13 +13,6 @@ class PagesController < ApplicationController
 
   private
 
-  # TESTED:
-  #  - first visit sets visitor_id correctly
-  #  - first visit stores visitor record correctly in db
-  #  - recurring visits sets visitor_id correctly
-
-  # NOT TESTED:
-  # - first visit from other browser than mine
   def set_visitor_id
     # if no visit cookie exists in the current browser, i.e. if it's the first visit
     # for the user, create new visitor object and set the visitor_id equal to its id
@@ -34,12 +27,6 @@ class PagesController < ApplicationController
     end
   end
 
-  # TESTED:
-  #  - visit creates cookie correctly
-  #  - visit stores visit record correctly in db
-
-  # NOT TESTED:
-  # - visit from other browser than mine
   def create_cookie
     timestamp = Time.now
     url = request.env['PATH_INFO']
