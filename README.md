@@ -39,10 +39,7 @@
   in the terminal to enter the Rails console. Then, for example, the page views
   that occurred between 2017-09-14 09:00 to 2017-09-14 11:00 can be searched and
   displayed by running:
-  <pre><code>
-  Visit.where(timestamp: ('2017-09-14 09:00:00 +0200').to_datetime..
-  ('2017-09-14 11:00:00 +0200').to_datetime)
-  </code></pre>
+  <pre><code>Visit.where(timestamp: ('2017-09-14 09:00:00 +0200').to_datetime..('2017-09-14 11:00:00 +0200').to_datetime)</code></pre>
 
   The whole list of query options can be found here:
   <a href="http://guides.rubyonrails.org/v3.2/active_record_querying.html">
@@ -53,9 +50,7 @@
 <p>
   Assuming Ruby, Rails and git are installed, download the project repository by
   running:
-  <pre><code>
-    git clone https://github.com/charliejeppsson/funnel_tracking.git
-  </code></pre>
+  <pre><code>git clone https://github.com/charliejeppsson/funnel_tracking.git</code></pre>
 
   Then run
   <pre><code>bundle install</code></pre>
