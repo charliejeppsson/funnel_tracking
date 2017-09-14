@@ -32,7 +32,11 @@
 <p>
   As all visitors and visits are recorded in the ActiveRecord database, the
   simplest way to search and display page view statistics is with ActiveRecord
-  commands in the Rails console. First, run <strong>rails c</strong> in the
+  commands in the Rails console. First, run
+
+  <pre><code>rails c</code></pre>
+
+  in the
   terminal to enter the Rails console. Then, for example, the page views
   that occurred between 2017-09-14 09:00 to 2017-09-14 11:00 can be searched and
   displayed by running<strong>
