@@ -28,20 +28,21 @@
   to the right Visitor record).
 </p>
 
-<h2>Displaying page view report</h2>
+<h2>Displaying page view statistics</h2>
 <p>
   As all visitors and visits are recorded in the ActiveRecord database, the
   simplest way to search and display page view statistics is with ActiveRecord
-  commands in the Rails console. First, run
+  commands in the Rails console. First, run:
 
   <pre><code>rails c</code></pre>
 
-  in the
-  terminal to enter the Rails console. Then, for example, the page views
+  in the terminal to enter the Rails console. Then, for example, the page views
   that occurred between 2017-09-14 09:00 to 2017-09-14 11:00 can be searched and
-  displayed by running<strong>
-  Visit.where(timestamp: ('2017-09-14 09:00:00 +0200').to_datetime..('2017-09-14 11:00:00 +0200').to_datetime)
-  </strong>
+  displayed by running:
+  <pre><code>
+  Visit.where(timestamp: ('2017-09-14 09:00:00 +0200').to_datetime..
+  ('2017-09-14 11:00:00 +0200').to_datetime)
+  </code></pre>
 
   The whole list of query options can be found here:
   <a href="http://guides.rubyonrails.org/v3.2/active_record_querying.html">
@@ -51,11 +52,18 @@
 <h2>How to build and run</h2>
 <p>
   Assuming Ruby, Rails and git are installed, download the project repository by
-  running <strong>git clone https://github.com/charliejeppsson/funnel_tracking.git
-  </strong>. Then run <strong>bundle install</strong> to install dependencies
-  specified in the file gemfile.rb. The command for running a local server on
-  http://localhost:3000 is <strong>rails s</strong> and for running tests
-  <strong>. rspec</strong>.
+  running:
+  <pre><code>
+    git clone https://github.com/charliejeppsson/funnel_tracking.git
+  </code></pre>
+
+  Then run
+  <pre><code>bundle install</code></pre>
+  to install dependencies specified in the file gemfile.rb. The command for
+  running a local server on http://localhost:3000 is:
+  <pre><code>rails s</code></pre>
+  and for running tests:
+  <pre><code>. rspec</code></pre>
 </p>
 
 <h2>How to test</h2>
@@ -78,7 +86,9 @@
     relational database</li>
   </ul>
 
-  The testing dependencies are brought into the project by running <strong>
-  bundle install</strong> in the terminal. To then run the tests, run
-  <strong>. rspec</strong> in the terminal from the project directory.
+  The testing dependencies are brought into the project by running:
+  <pre><code>bundle install</code></pre>
+  in the terminal. To then run the tests, run:
+  <pre><code>. rspec</code></pre>
+  in the terminal from the project directory.
 </p>
