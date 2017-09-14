@@ -12,6 +12,7 @@
   <%#= cookies[:value].nil? %>
   <%#= cookies[:value].split(',')[-1] %>
 
+  <%= cookies[:visit].nil? %>
   <% cookies.each do |cookie| %>
     <p> <%= cookie %> </p>
   <% end %>
